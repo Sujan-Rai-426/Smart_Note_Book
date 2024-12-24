@@ -37,8 +37,11 @@ DEBUG = config("DEBUG",default=False, cast=bool)
 
 ALLOWED_HOSTS = config("ALLOWED_HOSTS").split(",")
 
-# Manually added
 
+CSRF_TRUSTED_ORIGINS = [ 'smart-note-book-backend.up.railway.app' , 'smart-note-book-frontend.up.railway.app' ]
+
+
+# Manually added
 REST_FRAMEWORK = {
     "DEFAULT_AUTHENTICATION_CLASSES": (
         "rest_framework_simplejwt.authentication.JWTAuthentication",

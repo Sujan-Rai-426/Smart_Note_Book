@@ -1,0 +1,2 @@
+
+web gunicorn Smart_Note_Book.wsgi
