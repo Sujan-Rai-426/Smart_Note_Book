@@ -1,2 +1,0 @@
-
-web: gunicorn Smart_Note_Book.wsgi:application --bind 0.0.0.0:$PORT
