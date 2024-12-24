@@ -19,7 +19,7 @@
             },
         {
             "src": "/api/(.*)",
-            "dest": "Backend/$1"
+            "dest": "Backend_django/$1"
         }
     ]
 }
