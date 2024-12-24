@@ -1,31 +1,26 @@
+
+
 {
     "version": 2,
     "builds": [
-      {
-        "src": "Frontend_react/package.json",
-        "use": "@vercel/static-build"
-      },
-      {
-        "src": "Backend_django/manage.py",
-        "use": "@vercel/python"
-      }
+        {
+            "src": "Frontend_react/package.json",
+            "use": "@vercel/static-build" 
+        },
+        {
+            "src": "Backend_django/manage.py",
+            "use": "@vercel/python"  
+        }
     ],
     "rewrites": [
-      {
-        "source": "/static/(.*)",
-        "destination": "Frontend_react/$1"
-      },
-      {
-        "source": "^/$", 
-        "destination": "Frontend_react/index.html" 
-      },
-      {
-        "source": "^/!(api)", 
-        "destination": "Frontend_react/$1"
-      },
-      {
-        "source": "/api/(.*)",
-        "destination": "Backend_django/$1"
-      }
+        {
+            "source": "/(.*)",
+            "destination": "/"
+            },
+        {
+            "source": "/api/(.*)",
+            "destination": "/"
+        }
     ]
-  }
+
+}
