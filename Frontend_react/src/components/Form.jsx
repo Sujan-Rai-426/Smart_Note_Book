@@ -26,6 +26,10 @@ function Form({route, method }) {
     // set the name of the form
     const name = method === 'login'? 'Login': 'Register';
 
+    // Button link to register or login 
+    const visit_link = method === 'login' ? <p>Create new account? <a href="/register">Register</a></p> : <p>Already have an account? <a href="/login">Login</a></p>;
+
+
 
     // handle submit function
     const handleSubmit = async (e) => {
@@ -65,8 +69,12 @@ function Form({route, method }) {
             
             {/* Loading indicator */}
             {loading && <Loading_Indicator />}
+            <br />
 
             <button className='btn btn-primary'> {name} </button>
+            <br />
+
+            <p>{visit_link}</p>
         </form>
 
     )
