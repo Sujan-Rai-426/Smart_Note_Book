@@ -1,0 +1,5 @@
+
+# file that is ignore and hidden by git from other viewers
+
+.env
+db.sqlite3

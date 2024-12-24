@@ -1,0 +1,38 @@
+
+
+/* For styling the notes */
+
+.note-container {
+    background-color: rgb(0, 0, 0, 0.2);
+    padding: 10px;
+    margin: 20px 0;
+    border: 2px solid gray;
+    border-radius: 5px;
+}
+
+/* .note-title {
+    color: #333;
+} */
+
+/* .note-content {
+    color: #666;
+} */
+
+.note-date {
+    color: #999;
+    font-size: 0.8rem;
+}
+
+.note-delete-button {
+    background-color: #f44336; /* Red */
+    color: white;
+    border: none;
+    padding: 6px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.1s;
+}
+
+.note-delete-button:hover {
+    background-color: #a62020; /* Darker red */
+}
