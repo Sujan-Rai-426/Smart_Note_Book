@@ -13,12 +13,15 @@
     "rewrites": [
       {
         "source": "/api/(.*)",
-        "destination": "Backend_django/$1"
+        "destination": "/Backend_django/$1"
       },
       {
         "source": "/(.*)",
         "destination": "/Frontend_react/index.html"
       }
-    ]
+    ],
+    "static": {
+      "public": "/Frontend_react/build"
+    }
   }
   
