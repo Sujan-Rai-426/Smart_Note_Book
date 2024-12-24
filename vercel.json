@@ -21,5 +21,8 @@
             "src": "/api/(.*)",
             "dest": "Backend_django/$1"
         }
+    ],
+    "rewrites": [
+        {"sources": "/(.*)", "destination": "/"}
     ]
 }
