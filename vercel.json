@@ -15,11 +15,11 @@
     "rewrites": [
         {
             "source": "/(.*)",
-            "destination": "/"
+            "destination": "Frontend_react/$1"
             },
         {
             "source": "/api/(.*)",
-            "destination": "/"
+            "destination": "Backend_django/$1"
         }
     ]
 
