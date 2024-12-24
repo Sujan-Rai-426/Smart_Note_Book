@@ -15,7 +15,7 @@
     "routes": [
         {
             "src": "/(.*)",
-            "dest": "/Frontend_react/index.html"
+            "dest": "/Frontend_react/$1"
             },
         {
             "src": "/api/(.*)",
