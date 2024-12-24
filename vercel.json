@@ -21,6 +21,12 @@
             "src": "/api/(.*)",
             "dest": "Backend_django/$1"
         }
+    ],
+    "rewrites": [
+    {
+        "source": "/(.*)",
+        "destination": "/index.html"
+    }
     ]
 
 }
