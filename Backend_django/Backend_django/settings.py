@@ -116,11 +116,9 @@ if DEBUG: #debug is true
         }
     }
 else:  #  Production configuration (PostgreSQL via railway) 
-    print( config('DATABASE_URL'))
     DATABASES = {
         'default': dj_database_url.parse(config('DATABASE_URL'))
     }
-    print( config('DATABASE_URL'))
 
 
 # Password validation
