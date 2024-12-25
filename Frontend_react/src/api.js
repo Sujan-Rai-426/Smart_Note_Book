@@ -7,10 +7,15 @@ import axios from 'axios';
 import { ACCESS_TOKEN } from './constants';
 
 
-const api = axios.create({
+// Check the Vite build mode (development or production)
+const isProduction = import.meta.env.MODE === 'production';
 
-    // importing the api url from .env file
-    baseURL: import.meta.env.VITE_API_URL
+// Select the correct API URL based on the environment
+const apiUrl = isProduction ? import.meta.env.VITE_API_URL_PROD : import.meta.env.VITE_API_URL_LOCAL;
+
+// Create the axios instance with the selected base URL
+const api = axios.create({
+    baseURL: apiUrl
 });
 
 
