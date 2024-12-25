@@ -39,12 +39,12 @@ function Navbar(props) {
 
                             <li className="nav-item dropdown">
                                 <Link className="nav-link dropdown-toggle text-light" to="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Personal Projects
+                                    Personal-Projects
                                 </Link>
                                 <ul className="dropdown-menu">
                                     <li><a className="dropdown-item" href="https://www.sujan140.com.np">Portfolio</a></li>
-                                    <li><a className="dropdown-item" href="https://react-projects-azure.vercel.app/">Text PlayGround</a></li>
                                     <li><hr className="dropdown-divider" /></li>
+                                    <li><a className="dropdown-item" href="https://react-projects-azure.vercel.app/">Text PlayGround</a></li>
                                     <li><a className="dropdown-item" href="https://react-projects-azure.vercel.app/password_generator">Password Generator</a></li>
                                 </ul>
                             </li>
