@@ -59,7 +59,7 @@ function App() {
         <div className={`container`} style={{minHeight: '79.5vh', padding: '4vh 0'}}>
             <Routes>
               <Route exact path="/" element={ <ProtectedRoute> <Home mode={mode} /> </ProtectedRoute> } />
-              <Route exact path="/about" element={ <ProtectedRoute>  <About /> </ProtectedRoute>} />
+              <Route exact path="/about" element={ <>  <About /> </>} />
               <Route exact path="/login" element={<Login />} />
               <Route exact path="/logout" element={<Logout />} />
               <Route exact path="/register" element={<RegisterAndLogout />} />

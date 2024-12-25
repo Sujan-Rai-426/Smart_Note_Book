@@ -74,7 +74,7 @@ function Form({route, method }) {
             <button className='btn btn-primary'> {name} </button>
             <br />
 
-            <p>{visit_link}</p>
+            {visit_link}
         </form>
 
     )

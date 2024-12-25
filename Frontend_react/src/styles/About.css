@@ -1,0 +1,26 @@
+
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+.heading {
+    font-weight: 700;
+    text-align: center;
+}
+.subheading {
+    font-weight: 500;
+    margin-top: 20px;
+}
+.paragraph {
+    font-size: 16px;
+    color: gray;
+    text-align: justify;
+}
+.list {
+    list-style-type: disc;
+    padding-left: 20px;
+}
