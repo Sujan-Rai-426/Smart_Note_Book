@@ -38,7 +38,6 @@ DEBUG = config("DEBUG",default=False, cast=bool)
 ALLOWED_HOSTS = config("ALLOWED_HOSTS").split(",")
 
 
-CSRF_TRUSTED_ORIGINS = [ 'https://smart-note-book-backend.up.railway.app' , 'https://smart-note-book-frontend.up.railway.app' ]
 
 
 # Manually added
